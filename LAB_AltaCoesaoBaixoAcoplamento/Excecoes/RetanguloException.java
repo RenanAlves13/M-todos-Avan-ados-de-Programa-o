@@ -8,8 +8,4 @@ public class RetanguloException extends Exception{
 	
 	public RetanguloException(String message) { super(message); }
 	
-	public RetanguloException(String message, Throwable cause) { super(message, cause); }
-	
-	public RetanguloException(Throwable cause) { super(cause); }
-	
 }

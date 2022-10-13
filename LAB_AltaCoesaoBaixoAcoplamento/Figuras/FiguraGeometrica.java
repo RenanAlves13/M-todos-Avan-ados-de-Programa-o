@@ -1,5 +1,6 @@
 package Figuras;
 
+
 public class FiguraGeometrica {
 	
 	private Quadrado quadrado;
@@ -20,7 +21,6 @@ public class FiguraGeometrica {
 	
 	@Override
 	public String toString() {
-		return "";
+		return String.format("%s%n%s%n%s%n", circulo.toString(), quadrado.toString(), retangulo.toString());
 	}
-	
 }
