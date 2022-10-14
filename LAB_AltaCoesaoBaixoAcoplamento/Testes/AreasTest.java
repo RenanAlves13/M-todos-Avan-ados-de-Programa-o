@@ -18,11 +18,6 @@ class AreasTest {
 	double areaCirculo;
 	int areaQuadrado;
 	int areaRetangulo;
-	/*
-	int perimetroCirculo;
-	int perimetroQuadrado;
-	int perimetroRetangulo;
-	*/
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {

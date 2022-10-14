@@ -8,8 +8,15 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import Figuras.FiguraGeometrica;
+
 class PerimetrosTest {
 
+	FiguraGeometrica figuras;
+	int perimetroCirculo;
+	int perimetroQuadrado;
+	int perimetroRetangulo;
+	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 	}
