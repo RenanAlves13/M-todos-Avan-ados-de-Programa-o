@@ -23,6 +23,9 @@ class PerimetrosTest {
 
 	@AfterAll
 	static void tearDownAfterClass() throws Exception {
+		int perimetroQuadrado = figuras.perimetroQ();
+		int perimetroCirculo = figuras.perimetroC();
+		int perimetroRetangulo = figuras.perimetroR();
 	}
 
 	@BeforeEach

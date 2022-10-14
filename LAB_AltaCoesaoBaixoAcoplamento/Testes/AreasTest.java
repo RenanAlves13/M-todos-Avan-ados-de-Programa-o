@@ -33,11 +33,6 @@ class AreasTest {
 		areaQuadrado = figuras.areaQ();
 		areaCirculo = figuras.areaC();
 		areaRetangulo = figuras.areaR();
-			/*
-			perimetroQuadrado = figuras.perimetroQ();
-			perimetroCirculo = figuras.perimetroC();
-			perimetroRetangulo = figuras.perimetroR();
-			*/
 	}
 
 	@Test
