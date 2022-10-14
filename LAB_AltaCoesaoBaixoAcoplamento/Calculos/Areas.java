@@ -1,42 +1,22 @@
 package Calculos;
 
-import Figuras.*;
-import Excecoes.*;
-
 public class Areas {
 	
-    public int RetanguloA(Retangulo obj) throws RetanguloException{
+    public int retanguloA(int altura, int largura){
 
-        int area = obj.getAlturaRetangulo() * obj.getLarguraRetangulo();
-        System.out.println("A area deste retangulo e: " + area);
-        return area;
-
-    }
-    
-    public int QuadradoA(Quadrado obj) throws QuadradoException{
-
-        int area = 2 * obj.getLarguraQuadrado();
-        System.out.println("A area deste quadrado e: " + area);
-        return area;
-
-    }
-    
-    public double CirculoA(Circulo obj) throws CirculoException{
-
-        double area = 2 * 3.14 * obj.getRaioCirculo();
-        System.out.println("A area deste circulo e: " + area);
+        int area = altura * largura;
         return area;
     }
     
-    
-    public String todasAsAreas(Retangulo retangulo, Quadrado quadrado, Circulo circulo){
+    public int quadradoA(int largura){
 
-        int areaR = retangulo.getAlturaRetangulo() * retangulo.getLarguraRetangulo();
-        int areaQ = 2 * quadrado.getLarguraQuadrado();
-        double areaC = 2 * 3.14 * circulo.getRaioCirculo();
-
-        return "Todas as areas sao: " +  areaR + " " + areaQ + " e " 
-        + areaC + " retangulo, quadrado e circulo, respectivamente";
+        int area = 2 * largura;
+        return area;
     }
     
+    public double circuloA(int raio){
+
+        double area = 2 * 3.14 * raio;
+        return area;
+    }
 }

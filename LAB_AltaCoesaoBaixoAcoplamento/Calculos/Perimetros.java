@@ -1,27 +1,22 @@
 package Calculos;
 
-import Figuras.*;
-
 public class Perimetros{
-    //Main ter try catch para caso tenha erro
-    public static int RetanguloP(Retangulo obj){
 
-        int perimetro = (2 * obj.getAlturaRetangulo()) + (2 * obj.getLarguraRetangulo());
-        System.out.println("O perimetro do retangulo e: " + perimetro);
+	
+    public int retanguloP(int altura, int largura){
+
+        int perimetro = (2 * altura) + (2 * largura);
         return perimetro;
     }
-    public static int QuadradoP(Quadrado obj){
+    public int QuadradoP(int largura){
 
-        int perimetro = 4 * obj.getLarguraQuadrado();
-        System.out.println("O perimetro do quadrado e: " + perimetro);
+        int perimetro = 4 * largura;
         return perimetro;
 
     }
-    public static int CirculoP(Circulo obj){
+    public int CirculoP(int raio){
 
-        int perimetro = (int) (3.14 * obj.getRaioCirculo());
-        System.out.println("O perimetro do circulo e: " + perimetro);
+        int perimetro = (int) (3.14 * raio);
         return perimetro;
-
     }
 }
