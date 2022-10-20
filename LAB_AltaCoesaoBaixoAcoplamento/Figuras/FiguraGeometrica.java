@@ -11,8 +11,8 @@ public class FiguraGeometrica {
 	private Quadrado quadrado;
 	private Retangulo retangulo;
 	private Circulo circulo;
-	private Areas area;
-	private Perimetros perimetro;
+	private Areas area = new Areas();
+	private Perimetros perimetro = new Perimetros();
 	
 	public FiguraGeometrica(int altura, int largura, int lado, int raio){
 		this.retangulo = new Retangulo(altura, largura);
@@ -61,7 +61,7 @@ public class FiguraGeometrica {
 			return perimetro.QuadradoP(quadrado.getLarguraQuadrado());
 	}
 	
-	public int perimetroC() throws CirculoException{
+	public double perimetroC() throws CirculoException{
 		if(circulo == null)
 			throw new CirculoException("Não existe um circulo na sua coleção");
 		else

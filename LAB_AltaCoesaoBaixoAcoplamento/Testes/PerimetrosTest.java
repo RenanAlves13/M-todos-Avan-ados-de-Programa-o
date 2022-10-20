@@ -13,32 +13,44 @@ import Figuras.FiguraGeometrica;
 class PerimetrosTest {
 
 	FiguraGeometrica figuras;
-	int perimetroCirculo;
+	double perimetroCirculo;
 	int perimetroQuadrado;
 	int perimetroRetangulo;
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 	}
-
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-		int perimetroQuadrado = figuras.perimetroQ();
-		int perimetroCirculo = figuras.perimetroC();
-		int perimetroRetangulo = figuras.perimetroR();
-	}
-
+	
 	@BeforeEach
 	void setUp() throws Exception {
+		figuras = new FiguraGeometrica();
+		figuras.criarQuadrado(4);
+		figuras.criarCirculo(6);
+		figuras.criarRetangulo(2, 6);
+		perimetroQuadrado = figuras.perimetroQ();
+		perimetroCirculo = figuras.perimetroC();
+		perimetroRetangulo = figuras.perimetroR();
+	}
+	
+	@Test
+	void test1() {
+		assertEquals(16, perimetroQuadrado);
+	}
+	@Test
+	void test2() {
+		assertEquals(18.84, perimetroCirculo);
+	}
+	@Test
+	void test3() {
+		assertEquals(16, perimetroRetangulo);
+	}
+
+	@AfterAll
+	static void tearDownAfterClass(){
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
-	}
-
-	@Test
-	void test() {
-		fail("Not yet implemented");
 	}
 
 }

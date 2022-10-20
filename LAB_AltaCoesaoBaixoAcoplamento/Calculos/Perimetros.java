@@ -8,15 +8,18 @@ public class Perimetros{
         int perimetro = (2 * altura) + (2 * largura);
         return perimetro;
     }
+    
     public int QuadradoP(int largura){
 
         int perimetro = 4 * largura;
         return perimetro;
 
     }
-    public int CirculoP(int raio){
+    
+    public double CirculoP(int raio){
 
-        int perimetro = (int) (3.14 * raio);
+        double perimetro = (3.14 * raio);
         return perimetro;
     }
+    
 }
